@@ -1,0 +1,43 @@
+1. print("Josaiah")
+
+2. a=input()
+   print(a)
+   
+3. a=input("Enter something:")
+   b=input("Enter another thing:")
+   print(a,b)
+   
+4. a=raw_input("Enter string1:")
+   b=raw_input("Enter string2:")
+   
+5. a=int(input("enter no.1:"))
+   b=int(input("enter no.2:"))
+   c=int(input("enter no.3:"))
+   sum=a+b+c
+   print("Sum of three numbers is:",sum)
+ 
+6. a=input("enter input1:")
+   b=input("enter input2:")
+   if a !=b:
+     if a > b: 
+        print("The first input is greater")
+     else:
+        print("The second input is greater")
+   else: 
+     print("Both inputs are equal")  
+
+7.a=int(input("enter no.1:"))
+  b=int(input("enter no.2:"))
+  ratio=a/b
+  print("Ratio of",a,":",b,"=",ratio)
+  
+8.a=int(input("enter a number:"))
+  b=int(input("enter the dividend:"))
+  rem=a%b
+  quo=a/b
+  print("Remainder is:",rem,"and Quotient is:",quo)  
+
+9.a=input("Enter first name:")
+  b=input("Enter last name:")
+  print(a,b)
+  
