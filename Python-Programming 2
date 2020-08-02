@@ -1,0 +1,18 @@
+1.str="Python" # initial string
+  stringlength=len(str) 
+  slicedString=str[stringlength::-1] # slicing 
+  print (slicedString)
+  
+2.string1 = input("Enter String 1:")
+  string2 = input("Enter String 2:")
+  size1 = len(string1) 
+  size2 = len(string2) 
+  temp = '' 
+  if size1 != size2: 
+   print('0')
+  temp = string1 + string1 
+  if (temp.count(string2)> 0): 
+   print('1')
+  else: 
+   print('0')
+   
