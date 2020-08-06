@@ -1,0 +1,21 @@
+Finding Odd numbers.
+1.a=int(input("enter number of elements:"))
+  nolist=[]
+  for i in range(a):
+     nolist.append(int(input("enter the element:")))
+  for j in nolist:
+    if j % 2 !=0 :
+        print("odd--->",j)
+
+Finding Even numbers.
+2.a=int(input("enter number of elements:"))
+  nolist=[]
+  for i in range(a):
+     nolist.append(int(input("enter the element:")))
+  for j in nolist:
+    if j % 2 ==0 :
+        print("even--->",j)
+        
+        
+        
+        
