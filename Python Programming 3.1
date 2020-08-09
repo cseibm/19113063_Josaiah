@@ -1,0 +1,7 @@
+a=int(input("Enter the size of array:")) 
+arr=[]
+for i in range(a):
+    arr.append(int(input("enter the elements:")))
+split=int(input("Enter a number for splitting:"))
+x = [arr[i:i + split] for i in range(0, len(arr), split)]  
+print(x) 
