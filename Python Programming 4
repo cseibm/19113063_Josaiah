@@ -1,0 +1,11 @@
+1. Finding prime numbers in a given range.
+   min = 0
+   max = int(input("Enter the range:"))
+   primes = [num for num in range(min,max) if 0 not in [num%i for i in range(2,int(num/2)+1)]]
+   print(primes)
+   
+2.Finding letter 'e' and 't' in a given string.
+  text = (input("Enter a string:"))
+  lettere=[lettere for lettere in text if lettere=='e'  in text]
+  lettert=[lettert for lettert in text if lettert=='t'  in text]
+  print(lettere,lettert)
