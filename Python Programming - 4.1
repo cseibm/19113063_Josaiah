@@ -13,3 +13,13 @@ print(dict_student)
 cg_age(4,35)
 cg_age(16,15)
 print(dict_student)
+
+2. Using pop
+ dict_student={1:'Jo',2:'Pav',3:'Mojo',4:'Dan'}
+ temp=dict(dict_student)
+ length=len(dict_student)
+ for i in dict_student:
+    name=dict_student[i]
+    if name[0]=='P' or name[0]=='p':
+        temp.pop(i)
+ print(temp)    
