@@ -23,3 +23,13 @@ print(dict_student)
     if name[0]=='P' or name[0]=='p':
         temp.pop(i)
  print(temp)    
+ 
+ 3. Using popitem
+   dict_student={1:'Jo',2:'Pav',3:'Mojo',4:'Dan'}
+   temp=dict(dict_student)
+   length=len(dict_student)
+   for i in dict_student:
+     name=dict_student[i]
+     if name[0]=='P' or name[0]=='p':
+        temp.popitem()
+   print(temp) 
