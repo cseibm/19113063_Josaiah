@@ -33,3 +33,95 @@ print(dict_student)
      if name[0]=='P' or name[0]=='p':
         temp.popitem()
    print(temp) 
+   
+  4. Removing person having name start with 'P/p' 
+   dict_student={}
+   n=int(input('Enter the number of elements:'))
+   for i in range(n):
+    Key=input('Enter the reg_no:')
+    name=input('Enter the name:')
+    dict_student[Key]=name    
+   temp=dict(dict_student)
+   length=len(dict_student)
+
+   "checking For Letter P"
+   for i in dict_student:
+    name=dict_student[i]
+    if name[0]=='P' or name[0]=='p':
+        temp.pop(i)
+   print(temp)        
+
+  5.Removing person having First name and last name starting with 'P/p'
+   dict_student={}
+   n=int(input('Enter the number of elements:'))
+   for i in range(n):
+    Key=input('Enter the reg_no:')
+    first_name=input('Enter the first name:')
+    last_name=input('Enter the last name:')
+    dict_student[Key]=first_name,last_name   
+   temp=dict(dict_student)
+   length=len(dict_student)
+
+   "checking For Letter P"
+   for i in dict_student:
+    first_name=dict_student[i]
+    last_name=dict_student[i]
+    for x in first_name[0]:
+        if x=='P' or x=='p':
+            for y in last_name[0]:
+                if y=='P' or y=='p':
+                    temp.pop(i)
+                    break
+            break
+        break
+    print(temp)      
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 6. Finding max_even, max_sum and max_odd in list
+  def max_even_odd(sub,max_odd_list,max_even_list):
+    counto=0
+    counte=0
+    for i in sub:
+        if i % 2 !=0:
+            counto += 1
+        else:
+            counte += 1
+    max_odd_list.append(counto) 
+    max_even_list.append(counte) 
+    
+ def max_sum(sub,max_sum):
+    sum=0
+    for i in sub:
+        sum +=i
+    max_sum.append(max_sum_list)   
+    
+ lst=[]
+ max_sum_list=[]
+ max_odd_list=[]
+ max_even_list=[]
+ n=int(input('Enter the number of elements:'))
+ temp=n
+ for i in range(n):
+    sub_list=[]
+    n=int(input('Enter the number of elements in sub_list:'))
+    for j in range(n):
+        sub_list.append(int(input('Enter the elements:')))
+    lst.append(sub_list)
+ for i in range(temp):
+    max_even_odd(lst[i],max_odd_list,max_even_list)
+    max_sum(lst[i],max_sum_list)
+ print("The main list:\n\t", lst,"\n")
+ "index of list"
+ odd = max_odd_list.index(max(max_odd_list))
+ even = max_even_list.index(max(max_even_list))
+ maximum = max_sum_list.index(max(max_sum_list))
+
+ print("The sublist with the most no. of odd no. is sublist:",odd+1,"the most no. of even no. is sublist:",even+1,"and the max sum no.'s is sublist",maximum+1)
